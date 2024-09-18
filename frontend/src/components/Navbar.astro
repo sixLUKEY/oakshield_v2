@@ -1,0 +1,26 @@
+---
+interface ListItems {
+  name: string;
+  path: string;
+}
+
+export const listItems: ListItems[] = [
+  { name: "Home", path: "home" },
+  { name: "About", path: "about" },
+  { name: "Services", path: "services" },
+  { name: "Contact", path: "contact" },
+];
+---
+
+<nav class="flex justify-between font-bebas">
+	<div class="logo">Oakshield</div>
+	<ul class="flex justify-between gap-2 dark:text-primaryDark">
+		{listItems.map((item) => 
+		<li>
+			<a href={item.name}>
+				{item.name}
+			</a>
+		</li>
+		)}
+	</ul>
+</nav>
