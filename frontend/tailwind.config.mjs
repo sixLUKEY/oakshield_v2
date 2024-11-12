@@ -15,7 +15,7 @@ export default {
         containerDark: "",
         onContainer: "",
         onContainerDark: "",
-        primary: "",
+        primary: "#F1BB27",
         primaryDark: "#F1BB27",
         secondary: "",
         secondaryDark: "",

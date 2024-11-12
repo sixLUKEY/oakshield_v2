@@ -1,26 +1,47 @@
 ---
 interface ListItems {
-  name: string;
-  path: string;
+	name: string;
+	path: string;
 }
 
 export const listItems: ListItems[] = [
-  { name: "Home", path: "home" },
-  { name: "About", path: "about" },
-  { name: "Services", path: "services" },
-  { name: "Contact", path: "contact" },
+	{ name: "Home", path: "home" },
+	{ name: "About", path: "about" },
+	{ name: "Services", path: "services" },
+	{ name: "Contact", path: "contact" },
 ];
 ---
 
-<nav class="flex justify-between font-bebas">
-	<div class="logo">Oakshield</div>
-	<ul class="flex justify-between gap-2 dark:text-primaryDark">
-		{listItems.map((item) => 
-		<li>
-			<a href={item.name}>
-				{item.name}
-			</a>
-		</li>
-		)}
+<nav class="flex justify-between font-bebas text-lg">
+	<div class="logo text-3xl">Oakshield</div>
+	<ul class="flex justify-between gap-4 dark:text-surfaceDark">
+		{
+			listItems.map((item) => (
+				<li class="relative overflow-y-hidden text-3xl hover:text-primaryDark transition">
+					<a href={item.name}>{item.name}</a>
+				</li>
+			))
+		}
 	</ul>
 </nav>
+
+<style>
+	li::after {
+		z-index: -5;
+		content: "";
+		position: absolute;
+		left: 0;
+		bottom: 5%;
+		width: 100%;
+		height: 15px;
+		background-color: #594714;
+		transition:
+			transform 0.3s ease,
+			background-color 0.3s ease;
+		transform: translateY(40px);
+	}
+
+	li:hover::after {
+		transform: translateY(0); /* Move up 20px on hover */
+	}
+</style>
