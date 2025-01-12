@@ -11,7 +11,7 @@
 	];
 </script>
 
-<nav class="flex justify-between font-bebas text-4xl text-onSurfaceLight">
+<nav class="flex justify-between font-bebas text-4xl text-onSurfaceLight py-5">
 	<div>LOGO</div>
 	<ul class="flex gap-3">
 		{#each routes as route}

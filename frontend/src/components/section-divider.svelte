@@ -1,4 +1,4 @@
-<div class="mx-auto w-fit">
+<div class="mx-auto my-16 w-fit">
 	<svg width="998" height="1" viewBox="0 0 998 1" fill="none" xmlns="http://www.w3.org/2000/svg">
 		<line x1="4.37114e-08" y1="0.5" x2="998" y2="0.500087" stroke="url(#paint0_linear_193_51)" />
 		<defs>
