@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Base styles */
+body {
+	max-width: 100%;
+	margin: 0 auto;
+	padding: 0 1rem; /* Add some padding for smaller screens */
+	box-sizing: border-box;
+}
+
+/* Tailwind-inspired breakpoints */
+@media (min-width: 640px) {
+	body {
+		max-width: 640px; /* sm */
+	}
+}
+
+@media (min-width: 768px) {
+	body {
+		max-width: 768px; /* md */
+	}
+}
+
+@media (min-width: 1024px) {
+	body {
+		max-width: 1024px; /* lg */
+	}
+}
+
+@media (min-width: 1280px) {
+	body {
+		max-width: 1280px; /* xl */
+	}
+}
+
+@media (min-width: 1536px) {
+	body {
+		max-width: 1536px; /* 2xl */
+	}
+}

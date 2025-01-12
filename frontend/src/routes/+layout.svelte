@@ -1,4 +1,6 @@
 <script lang="ts">
+	import '../app.css';
+
 	let { children } = $props();
 
 	let routes: { name: string; path: string }[] = [
@@ -9,10 +11,11 @@
 	];
 </script>
 
-<nav>
-	<ul>
+<nav class="flex justify-between font-bebas text-4xl text-onSurfaceLight">
+	<div>LOGO</div>
+	<ul class="flex gap-3">
 		{#each routes as route}
-			<li>
+			<li class="hover:text-onSurfacePrimary transition">
 				<a href={route.path}>{route.name.toUpperCase()}</a>
 			</li>
 		{/each}
