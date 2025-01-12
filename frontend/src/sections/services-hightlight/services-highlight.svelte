@@ -9,7 +9,7 @@
 <section class="flex flex-col ">
 	<SectionHeading adjective="Services at a glance" />
 
-	<div class="flex gap-5 mx-auto">
+	<div class="flex justify-between mx-auto w-full">
 		<ServiceHighlightImage src={guard} alt="A Security guard with reflective jacket" text="Security Guarding" />
 		<ServiceHighlightImage src={drone} alt="A drone flying in the air" text="drone surveillance" />
 		<ServiceHighlightImage src={dog} alt="German Shephard dog" text="Guard dogs" />

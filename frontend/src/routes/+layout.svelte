@@ -1,5 +1,6 @@
 <script lang="ts">
 	import '../app.css';
+	import logo from '$lib/logo.png'
 
 	let { children } = $props();
 
@@ -11,8 +12,10 @@
 	];
 </script>
 
-<nav class="flex justify-between font-bebas text-4xl text-onSurfaceLight py-5">
-	<div>LOGO</div>
+<nav class="flex justify-between font-bebas text-3xl text-onSurfaceLight py-5 items-center sticky top-0 bg-surface z-50">
+	<div class="flex">
+		<img class="h-16" src={logo} alt="Oakshield Security logo">
+	</div>
 	<ul class="flex gap-3">
 		{#each routes as route}
 			<li class="hover:text-onSurfacePrimary transition">

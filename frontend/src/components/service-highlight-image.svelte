@@ -2,7 +2,7 @@
 	let { src, alt, text } = $props();
 </script>
 
-<div class="w-80 h-80 relative overflow-hidden image-container">
+<div class="w-72 h-72 relative overflow-hidden image-container rounded">
 	<img {src} {alt} />
 	<div class="font-bebas">{text}</div>
 </div>
