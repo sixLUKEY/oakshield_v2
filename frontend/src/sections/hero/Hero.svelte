@@ -1,4 +1,4 @@
-<div class="text-center flex flex-col items-center gap-5">
+<div class="text-center flex flex-col items-center gap-5 my-24">
 	<h1 class="text-6xl font-bebas text-[#FFFAED]">
 		Total <span class="text-[#FFF0C8]">Peace</span> of mind
 	</h1>
