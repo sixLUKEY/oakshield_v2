@@ -1,2 +1,10 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation</p>
+<script>
+	import SectionDivider from '../components/section-divider.svelte';
+	import Hero from '../sections/hero/Hero.svelte';
+	import ServicesHighlight from '../sections/services-hightlight/services-highlight.svelte';
+</script>
+
+<Hero />
+<SectionDivider />
+<ServicesHighlight />
+<SectionDivider />

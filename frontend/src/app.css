@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Base styles */
+body {
+	max-width: 100%;
+	margin: 0 auto;
+	padding: 0 1rem; /* Add some padding for smaller screens */
+	box-sizing: border-box;
+	background-image: url('./lib/watermark.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 40%;
+	background-attachment: fixed;
+}
+
+/* Tailwind-inspired breakpoints */
+@media (min-width: 640px) {
+	body {
+		max-width: 640px; /* sm */
+	}
+}
+
+@media (min-width: 768px) {
+	body {
+		max-width: 768px; /* md */
+	}
+}
+
+@media (min-width: 1024px) {
+	body {
+		max-width: 1024px; /* lg */
+	}
+}
+
