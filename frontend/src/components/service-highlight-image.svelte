@@ -39,6 +39,4 @@
 	.image-container:hover > div {
 		opacity: 1;
 	}
-
-
 </style>
