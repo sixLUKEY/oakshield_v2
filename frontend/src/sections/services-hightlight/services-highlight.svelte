@@ -15,7 +15,7 @@
 			alt="A Security guard with reflective jacket"
 			text="Security Guarding"
 		/>
-		<ServiceHighlightImage src={drone} alt="A drone flying in the air" text="drone surveillance" />
-		<ServiceHighlightImage src={dog} alt="German Shephard dog" text="Guard dogs" />
+		<ServiceHighlightImage src={drone} alt="A drone flying in the air" text="Drone Surveillance" />
+		<ServiceHighlightImage src={dog} alt="German Shephard dog" text="Guard Dogs" />
 	</div>
 </section>

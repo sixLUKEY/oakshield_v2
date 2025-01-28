@@ -1,6 +1,8 @@
 <script>
 	import SectionDivider from '../components/section-divider.svelte';
+	import About from '../sections/about/about.svelte';
 	import Hero from '../sections/hero/Hero.svelte';
+	import Projects from '../sections/projects/projects.svelte';
 	import ServicesHighlight from '../sections/services-hightlight/services-highlight.svelte';
 	import CoreValues from '../sections/values/core-values.svelte';
 </script>
@@ -9,4 +11,8 @@
 <SectionDivider />
 <ServicesHighlight />
 <SectionDivider />
+<About/>
+<SectionDivider />
 <CoreValues />
+<SectionDivider />
+<Projects />

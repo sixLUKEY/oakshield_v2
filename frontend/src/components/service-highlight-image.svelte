@@ -4,7 +4,7 @@
 
 <div class="w-72 h-72 relative overflow-hidden image-container rounded">
 	<img {src} {alt} />
-	<div class="font-bebas">{text}</div>
+	<div class="font-carlito">{text}</div>
 </div>
 
 <style>
