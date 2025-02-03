@@ -4,7 +4,7 @@
 </script>
 
 <section class="w-full flex flex-col items-center gap-14 relative">
-	<SectionHeading adjective="Our core values" />
+	<SectionHeading adjective="Our core values" id="values" />
 
 	<ValueBlock
 		heading="Safety Assured"

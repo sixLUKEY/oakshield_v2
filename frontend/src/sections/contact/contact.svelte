@@ -2,7 +2,6 @@
 	import SectionHeading from "../../components/section-heading.svelte";
 
 </script>
-
-<section class="flex justify-center">
-  <SectionHeading adjective="Projects" id="projects"/>
+<section id="contact">
+  <SectionHeading adjective="Let's get in touch" id="contact"/>
 </section>

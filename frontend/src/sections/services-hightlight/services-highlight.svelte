@@ -7,7 +7,7 @@
 </script>
 
 <section class="flex flex-col items-center">
-	<SectionHeading adjective="Services at a glance" />
+	<SectionHeading adjective="Services at a glance" id="highlights"/>
 
 	<div class="flex justify-between mx-auto w-full">
 		<ServiceHighlightImage
