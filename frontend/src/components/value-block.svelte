@@ -1,38 +1,22 @@
 <script lang="ts">
-	let { heading, description } = $props();
+	let { heading, description, src, alt } = $props();
+	let normalizedDescription = Array.isArray(description) ? description : [description];
 </script>
 
-<div class="flex items-center gap-14 value-item w-[500px]">
-	<div class="w-12 bg-surface flex items-center rounded-full">
-		<svg width="35" height="43" viewBox="0 0 35 43" fill="none" xmlns="http://www.w3.org/2000/svg" class="transition shield">
-			<path
-				d="M23.2305 29.7462L24.2448 30.3586L23.9758 29.2047L22.4496 22.6566L27.4924 18.261L28.3793 17.488L27.2072 17.386L20.5468 16.8062L17.9609 10.654L17.4993 9.55566L17.0389 10.6545L14.4528 16.8258L7.79275 17.4055L6.6173 17.5078L7.50837 18.2812L12.5509 22.6579L11.0433 29.206L10.7779 30.3587L11.7896 29.7458L17.5004 26.2866L23.2305 29.7462ZM0.5 19.5455V8.14243L17.5 0.547629L34.5 8.14243V19.5455C34.5 30.1421 27.229 40.0311 17.5 42.4848C7.77103 40.0311 0.5 30.1421 0.5 19.5455Z"
-				fill="#1E1E1E"
-				stroke="#594714"
-			/>
-		</svg>
+<div class="flex flex-col flex-1 text-onSurfaceLight text-center text-sm">
+	<div class="flex items-center justify-center gap-4">
+		<h3 class=" font-carlito font-bold text-2xl">{heading}</h3>
+		<div class="bg-onSurfacePrimary w-px h-4 rounded"></div>
+		<img {src} {alt}>
 	</div>
-	<div class="p-3 transition border border-onSurfacePrimary rounded w-96 text-block">
-		<h3 class="text-onSurfacePrimary text-4xl font-carlito">{heading}</h3>
-		<p class="text-xl text-onSurfaceLight">{description}</p>
-	</div>
+	<div class="w-3/4 mx-auto px-2 h-px bg-onSurfacePrimary rounded-full mb-4 mt-2"></div>
+	{#if normalizedDescription.length === 1}
+		<p class="px-2">{normalizedDescription[0]}</p>
+		{:else}
+		<ul class="list-disc list-inside text-start">
+			{#each normalizedDescription as desc}
+				<li class="list-item">{desc}</li>
+			{/each}
+		</ul>
+	{/if}
 </div>
-
-<style lang="scss">
-	.value-item {
-		&:hover {
-			.text-block {
-				transform: translateX(20px);
-			}
-
-			.shield {
-				transform: scale(1.3);
-				
-				path {
-					fill: #F1BB27;
-					stroke: none;
-				}
-			}
-		}
-	}
-</style>

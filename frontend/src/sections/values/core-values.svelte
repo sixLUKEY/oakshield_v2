@@ -1,48 +1,42 @@
 <script>
 	import SectionHeading from '../../components/section-heading.svelte';
 	import ValueBlock from '../../components/value-block.svelte';
+	import diamond from '$lib/icons/value-icons/diamond.svg';
+	import eye from '$lib/icons/value-icons/eye.svg';
+	import trophy from '$lib/icons/value-icons/trophy.svg';
 </script>
 
-<section class="w-full flex flex-col items-center gap-14 relative">
-	<SectionHeading adjective="Our core values" id="values" />
+<section>
+	<SectionHeading adjective="What Guides Us" id="values" />
 
-	<ValueBlock
-		heading="Safety Assured"
-		description="Lorem ipsum dolor sit amet consectetur. Facilisis elementum proin id lectus tempus mattis massa id. Nisl congue quam lorem commodo eget nibh integer integer sed nunc."
-	/>
-	<ValueBlock
-		heading="Guaranteed Quality"
-		description="Lorem ipsum dolor sit amet consectetur. Facilisis elementum proin id lectus tempus mattis massa id. Nisl congue quam lorem commodo eget nibh integer integer sed nunc."
-	/>
-	<ValueBlock
-		heading="Peace of Mind"
-		description="Lorem ipsum dolor sit amet consectetur. Facilisis elementum proin id lectus tempus mattis massa id. Nisl congue quam lorem commodo eget nibh integer integer sed nunc."
-	/>
-
-	<!-- <svg width="1" height="852" viewBox="0 0 1 852" fill="none" xmlns="http://www.w3.org/2000/svg" class="line absolute"> -->
-	<!-- 	<line x1="0.5" y1="-2.18557e-08" x2="0.500037" y2="852" stroke="url(#paint0_linear_193_46)" /> -->
-	<!-- 	<defs> -->
-	<!-- 		<linearGradient -->
-	<!-- 			id="paint0_linear_193_46" -->
-	<!-- 			x1="-0.5" -->
-	<!-- 			y1="2.18557e-08" -->
-	<!-- 			x2="-0.499963" -->
-	<!-- 			y2="852" -->
-	<!-- 			gradientUnits="userSpaceOnUse" -->
-	<!-- 		> -->
-	<!-- 			<stop stop-color="#1E1E1E" /> -->
-	<!-- 			<stop offset="0.17" stop-color="#F1BB27" /> -->
-	<!-- 			<stop offset="0.805" stop-color="#F1BB27" /> -->
-	<!-- 			<stop offset="1" stop-color="#1E1E1E" /> -->
-	<!-- 		</linearGradient> -->
-	<!-- 	</defs> -->
-	<!-- </svg> -->
+	<div class="w-full flex items-center gap-8 relative">
+		<ValueBlock
+			heading="Vision"
+			description="To provide to our clients Total Peace of Mind, and in doing so, become a momentous role
+			player in the security industry."
+			src={eye}
+			alt="an eye"
+		/>
+		<svg width="18" height="6" viewBox="0 0 18 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<path d="M18 3L13 0.113249V5.88675L18 3ZM13.5 2.5L0 2.5V3.5L13.5 3.5V2.5Z" fill="#F1BB27" />
+		</svg>
+		<ValueBlock
+			heading="Mission"
+			description={[
+				'Providing exceptional service and quality products without compromise.',
+				'Building lasting relationships through honesty and ethical practices.'
+			]}
+			src={trophy}
+			alt="a trophy"
+		/>
+		<svg width="18" height="6" viewBox="0 0 18 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<path d="M18 3L13 0.113249V5.88675L18 3ZM13.5 2.5L0 2.5V3.5L13.5 3.5V2.5Z" fill="#F1BB27" />
+		</svg>
+		<ValueBlock
+			heading="Value"
+			description="Our high-quality security solutions help businesses build sustainable enterprises by reducing risk, preventing loss, and ensuring peace of mind."
+			src={diamond}
+			alt="a diamond"
+		/>
+	</div>
 </section>
-
-<style lang="scss">
-	.line {
-		left: calc(50% - 233px);
-		bottom: -5%;
-		z-index: -1;
-	}
-</style>
