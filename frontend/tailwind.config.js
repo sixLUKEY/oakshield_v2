@@ -13,8 +13,7 @@ export default {
 				surfacAlternate: '#303030'
 			},
 			fontFamily: {
-				lato: ['Lato', 'serif'],
-				carlito: ['Carlito', 'serif'],
+				carlito: ['Carlito', 'sans-serif']
 			}
 		}
 	},

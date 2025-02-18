@@ -1,8 +1,10 @@
 <script>
-	import SectionHeading from "../../components/section-heading.svelte";
-
+	import Carousel from '../../components/carousel/carousel.svelte';
+	import SectionHeading from '../../components/section-heading.svelte';
 </script>
 
-<section class="flex justify-center">
-  <SectionHeading adjective="Projects" id="projects"/>
+<section class="flex flex-col items-center">
+	<SectionHeading adjective="Projects" id="projects" />
+
+	<Carousel />
 </section>

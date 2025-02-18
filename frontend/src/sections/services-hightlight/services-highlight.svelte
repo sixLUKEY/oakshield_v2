@@ -9,7 +9,7 @@
 <section class="flex flex-col items-center">
 	<SectionHeading adjective="Services at a glance" id="highlights"/>
 
-	<div class="flex justify-between mx-auto w-full">
+	<div class="flex gap-8 mx-auto w-full">
 		<ServiceHighlightImage
 			src={guard}
 			alt="A Security guard with reflective jacket"
