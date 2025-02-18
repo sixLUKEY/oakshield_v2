@@ -2,9 +2,9 @@
 	let { src, alt, text } = $props();
 </script>
 
-<div class="w-72 h-72 relative overflow-hidden image-container rounded">
+<div class="max-h-52 relative overflow-hidden image-container rounded flex-1">
 	<img {src} {alt} />
-	<div class="font-bebas">{text}</div>
+	<div class="font-carlito">{text}</div>
 </div>
 
 <style>
@@ -39,6 +39,4 @@
 	.image-container:hover > div {
 		opacity: 1;
 	}
-
-
 </style>
