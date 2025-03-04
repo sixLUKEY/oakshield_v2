@@ -1,12 +1,13 @@
 <script lang="ts">
 	import '../app.css';
 	import logo from '$lib/logo.png';
+	import Footer from '../components/footer.svelte';
 
 	let { children } = $props();
 
 	let routes: { name: string; path: string }[] = [
 		{ name: 'Home', path: '/' },
-		{ name: 'Services', path: '/#services' },
+		{ name: 'Services', path: '/services' },
 		{ name: 'About', path: '/#about' },
 		{ name: 'Contact', path: '/#contact' }
 	];
@@ -27,4 +28,5 @@
 	</ul>
 </nav>
 
+<Footer />
 {@render children()}

@@ -3,10 +3,14 @@
 		Total <span class="text-[#FFF0C8]">Peace</span> Of Mind
 	</h1>
 	<div class="flex gap-5 font-carlito text-xl">
-		<button class="bg-onSurfacePrimary w-32 py-1 rounded transition">Our Services</button>
-		<button
-			class="border border-onSurfacePrimary w-32 py-1 text-onSurfacePrimary rounded transition"
+		<a href="/services">
+					<button class="bg-onSurfacePrimary border border-onSurfacePrimary w-32 py-1 rounded transition hover:bg-onSurfacePrimaryDim hover:text-onSurfacePrimary">Our Services</button>
+		</a>
+		<a href="/#contact">
+			<button
+			class="border border-onSurfacePrimary w-32 py-1 text-onSurfacePrimary rounded transition hover:bg-onSurfacePrimaryDim"
 			>Contact Us</button
 		>
-	</div>
+		</a>
+			</div>
 </div>

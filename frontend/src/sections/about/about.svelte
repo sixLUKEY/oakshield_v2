@@ -36,5 +36,7 @@
 		/>
 	</div>
 
-	<button class="border border-onSurfacePrimary rounded p-3 text-lg text-onSurfacePrimary transition hover:bg-onSurfacePrimary hover:text-surface">Learn more about our services</button>
+	<a href="/services">
+			<button class="border border-onSurfacePrimary rounded p-3 text-lg text-onSurfacePrimary transition hover:bg-onSurfacePrimary hover:text-surface">Learn more about our services</button>
+	</a>
 </section>

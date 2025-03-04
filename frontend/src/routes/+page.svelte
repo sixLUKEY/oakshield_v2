@@ -6,7 +6,6 @@
 	import Projects from '../sections/projects/projects.svelte';
 	import ServicesHighlight from '../sections/services-hightlight/services-highlight.svelte';
 	import CoreValues from '../sections/values/core-values.svelte';
-	import Footer from '../components/footer.svelte'
 </script>
 
 <Hero />
@@ -20,4 +19,3 @@
 <Projects />
 <SectionDivider />
 <Contact/>
-<Footer />
